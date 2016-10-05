@@ -1,95 +1,247 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<meta charset="utf-8" />
-	<title>Iceberg - Desenvolvedores</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" type="text/css" href="css/estilo.css" />
-</head>
+<html>
+<title>Análise de Grafos</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    opacity: 0.7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('img/grafocompleto.png');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("img/teste.png");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("img/grafocompleto.png");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+#googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
+}
+
+/* Turn off parallax scrolling for tablets and mobiles */
+@media only screen and (max-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
 <body>
-	<div class="header">
-		<div class="linha">
-			<header>
-				<div class="coluna col4">
-					<h1 class="logo"> <a href="index.html">Iceberg</a> </h1>
-				</div>
-				<div class="coluna col8">
-					<nav>
-						<ul class="menu inline sem-marcador">
-							<li><a href="index.html">página inicial</a></li>
-							<li><a href="servicos.html">serviços</a></li>
-							<li><a href="sobre.html">quem somos</a></li>
-							<li><a href="contato.html">contato</a></li>
-						</ul>
-					</nav>
-				</div>
-			</header>
-		</div>
-	</div>
-	<div class="linha">
-		<section>
-			<div class="coluna col3 sidebar">
-				<h3>Clientes satisfeitos</h3>
-				<ul class="sem-marcador sem-padding">
-					<li><a href="">Maratona de Programação</a></li>
-					<li><a href="">Campus Party</a></li>
-					<li><a href="">Nome da Empresa</a></li>
-					<li><a href="">Nome da Empresa</a></li>
-					<li><a href="">Nome da Empresa</a></li>
-					<li><a href="">Nome da Empresa</a></li>
-					<li><a href="">Nome da Empresa</a></li>
-				</ul>
-				<a href="clientes.html" class="botao">Ver todos &raquo;</a>
-			</div>
-			<div class="coluna col9">
-				<h2>Monstros da Programação</h2>
-				<img src="img/giphy.gif" alt="">
-				<p>Dfelfme elmfelfmas flsm efçl, kenfiws kmnsdv akmff aomfoe apc,pe edovm! "Ffmoem feom wmsc wpdk fpb, dnv kfcnslmc" emfel slcmx efk dmv scms cle fcedv, mlsmdc. A felmv kvcnd wsocms.</p>
-				<a href="clientes.html" class="botao">Ver outros trabalhos &raquo;</a>
-			</div>
-		</section>
-	</div>
-	<div class="conteudo-extra">
-		<div class="linha">
-			<div class="coluna col7">
-				<section>
-					<h2>Como um site pode ajudar sua empresa?</h2>
-					<p>Skekfne wdnow wdomwp vaowdknv ovnf sdoivn dsovnik oewinf oeifn qoekfn oeknf sokdfnv woefnk  wekjf  woeinf, cka  osdivcn dvoisn idwsfac.</p>
-					<p>Skekfne wdnow wdomwp vaowdknv ovnf sdoivn dsovnik oewinf oeifn qoekfn oeknf sokdfnv woefnk  wekjf  woeinf, cka  osdivcn dvoisn idwsfac.</p>
-					<p>Skekfne wdnow wdomwp vaowdknv ovnf sdoivn dsovnik oewinf oeifn qoekfn oeknf sokdfnv woefnk  wekjf  woeinf, cka  osdivcn dvoisn idwsfac.</p>
-				</section>
-			</div>
-			<div class="coluna col5">
-				<h3>Últimas notícias</h3>
-				<ul class="sem-marcador sem-padding noticias">
-					<li>
-						<img src="img/thumb-pequena.jpg" alt="">
-						<h4>Título da notícia publicada no blog</h4>
-						<p>Skekfne wdnow wdomwp vaowdknv ovnf sdoivn dsovnik oewinf oeifn qoekfn oeknf sokdfnv woefnk  wekjf  woeinf, cka  osdivcn dvoisn idwsfac. <a href="">Leia mais &raquo;</a></p>
-					</li>
-					<li>
-						<img src="img/thumb-pequena.jpg" alt="">
-						<h4>Título da notícia publicada no blog</h4>
-						<p>Skekfne wdnow wdomwp vaowdknv ovnf sdoivn dsovnik oewinf oeifn qoekfn oeknf sokdfnv woefnk  wekjf  woeinf, cka  osdivcn dvoisn idwsfac. <a href="">Leia mais &raquo;</a></p>
-					</li>
-					<li>
-						<img src="img/thumb-pequena.jpg" alt="">
-						<h4>Título da notícia publicada no blog</h4>
-						<p>Skekfne wdnow wdomwp vaowdknv ovnf sdoivn dsovnik oewinf oeifn qoekfn oeknf sokdfnv woefnk  wekjf  woeinf, cka  osdivcn dvoisn idwsfac. <a href="">Leia mais &raquo;</a></p>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="footer">
-		<div class="linha">
-			<footer>
-				<div class="coluna col12">
-					<span>&copy; 2016 - RBernardi Desenvolvimento Web</span>
-				</div>
-			</footer>
-		</div>
-	</div>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar" id="myNavbar">
+    <li><a href="#" class="w3-padding-large">HOME</a></li>
+    <li><a href="#about" class="w3-padding-large">Sobre</a></li>
+    <li><a href="#imagens" class="w3-padding-large">Imagens</a></li>
+  </ul>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-opacity w3-display-container">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">ANÁLISE <span class="w3-hide-small">DE</span> GRAFOS</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Sobre o Projeto</h3>
+  <p>Grafos são redes ou estruturas que possibilitam a abstração de relacionamentos entre objetos, onde um vértice representa os objetos de fato e as arestas representam o relacionamento entre dois desses objetos, podendo um objeto se relacionar com vários outros, mas uma aresta identificando somente um relacionamento, considerado de certa forma intangível.</p>
+
+  <p>Dentre os diversos tipos de redes, existem as redes de colaboração bibliográficas. Uma rede de colaboração bibliográfica é um conjunto de entidades que possuem algum tipo de troca de contribuição entre si. Neste caso, um projeto que possibilite que várias pessoas colaborem com dados e informações para que o projeto aumente sua proporção, está permitindo que uma gama de relacionamentos seja criada entre estas pessoas que contribuíram em tal projeto, dessa forma uma pessoa que está contribuindo em vários projetos ao mesmo tempo está relacionada com outras várias pessoas através destes outros projetos. Nesta perspectiva, um estilo musical que possui vários artistas colaborando com músicas para que o estilo aumente sua proporção, está permitindo também que estes artistas possuam relacionamentos entre si, dada a possibilidade de um artista colaborar em vários estilos, um artista está relacionado a outros vários artistas através destes estilos.</p>
+
+  <p>A Cultura musical está disseminada em todo o mundo, e no Brasil não é diferente. Com isso, o acesso a internet facilitou na busca por músicas especificas, artistas e estilos musicais. Se verificarmos os artistas e os estilos musicais como objetos, podemos estabelecer relacionamentos entre eles e assim, conseguir obter uma estrutura de grafo.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-section">
+      <p><b>Universidade Federal do Tocantins</b></p><br>
+      <img src="img/brasaouft.png" height="200" width="200"  alt="Photo of Me">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-section">
+      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="imagens">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="img_p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img_p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img_p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img_p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="img_p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img_p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img_p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img_p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" style="max-width:100%">
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large"></div>
+    </div>
+    <div class="w3-col m8 w3-container w3-section">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <p>Swing by for a cup of coffee, or leave me a note:</p>
+      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-half">
+          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
+        </div>
+        <div class="w3-half">
+          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
+        </div>
+      </div>
+      <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
+      <button class="w3-btn w3-section w3-right">SEND</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black">
+  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 12,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+</script>
+
 </body>
 </html>
